@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name = "GoToCart">
+<!--        <packages><package name="TestNG"/>-->
+<!--        </packages>-->
+        <classes>
+            <class name="TestNG.Test1">
+        <!--     <methods>
+                     <include name="CatsCase2"/>
+                     <include name="DogsCase2"/>
+                 </methods> -->
+             </class>
+         </classes>
+     </test>
+     <test name = "LogIn">
+         <classes>
+             <class name="TestNG.Test2">
+                 <methods>
+                     <exclude name="Dogs.*"/>
+                     <!--    <include name="DogsCase"/>  if u write only include with 1 or several methods, only those methods would be included -->
+                 </methods>
+            </class>
+             <class name="TestNG.Test3"></class>
+        </classes>
+     </test>
+</suite>
